@@ -4,7 +4,7 @@ class areaPerimetro {
     public static void main(String [] args) {
         float altura, largura, area, perimetro;
         Scanner entrada;
-        entrada = new Scanner (System.in);
+        entrada = new.Scanner (System.in);
         System.out.print("Digite o valor da altura do retângulo: ");
         altura = entrada.nextFloat();
         System.out.print("Digite o valor da largura do retângulo: ");
