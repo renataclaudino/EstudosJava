@@ -1,23 +1,22 @@
 import java.util.Scanner;
 
 public class CalculadoraIMCHardcore {
-    // Abre a classe
 
-    // ERRO 1 CORRIGIDO: Assinatura correta do método main
     public static void main(String[] args) {
-        // Todo o código de execução começa aqui, dentro do main
 
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite o seu peso em kg: ");
         double peso = entrada.nextDouble();
 
-        System.out.println("Digite a sua altura em metros: ");
-        double altura = entrada.nextDouble();
+        System.out.println("Digite a sua altura em centímetros: ");
+        double alturaCm = entrada.nextDouble();
+
+        // Convertendo para metros
+        double altura = alturaCm / 100;
 
         double imc = peso / (altura * altura);
 
-        // ERRO 2 CORRIGIDO: Adicionados os parênteses em todas as condições
         if (imc < 18.5) {
             System.out.println("Classificação: Abaixo do peso");
         } else if (imc >= 18.5 && imc < 24.9) {
@@ -32,11 +31,8 @@ public class CalculadoraIMCHardcore {
             System.out.println("Classificação: Obesidade grau III ou mórbida");
         }
 
-        // ERRO 3 CORRIGIDO: Usando o println para simplicidade
-        System.out.println("Seu IMC é: " + imc);
+        System.out.printf("Seu IMC é: %.2f\n", imc);
 
-        entrada.close(); // Boa prática!
-
-    } // Fecha o método main
-
-} // Fecha a classe
+        entrada.close();
+    }
+}
