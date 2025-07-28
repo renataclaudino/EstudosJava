@@ -24,4 +24,4 @@ Estudar a linguagem Java de forma prática, com exemplos e exercícios que refor
 Você pode clonar este repositório ou baixar os arquivos em `.zip`. Recomendado utilizar uma IDE como [IntelliJ IDEA](https://www.jetbrains.com/idea/) ou [Eclipse](https://www.eclipse.org/) para executar os códigos.
 
 ```bash
-git clone https://github.com/renataclaudino/java-estudos.git
+git clone https://github.com/renataclaudino/EstudosJava.git
